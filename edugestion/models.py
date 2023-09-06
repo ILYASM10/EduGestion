@@ -3,9 +3,8 @@ from django.contrib.auth.models import User
 
 # Table pour stocker les informations sur les écoles.
 class School(models.Model):
-    name = models.CharField(max_length=100)  # Nom de l'école.
-    address = models.TextField()  # Adresse de l'école.
-
+    name = models.CharField(max_length=255)  # Nom de l'école.
+    address = models.TextField()  # Adresse de l'école. 
 # Table pour stocker les rôles des utilisateurs (directeurs, professeurs, etc.).
 class Role(models.Model):
     name = models.CharField(max_length=100)  # Nom du rôle.
